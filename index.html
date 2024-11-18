@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billetera Digital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Billetera Digital Nequi</h1>
+    </header>
+    <main>
+        <section id="cliente-form">
+            <h2>Registrar Cliente</h2>
+            <form id="form-cliente">
+                <input type="text" id="nombre" placeholder="Nombre" required>
+                <input type="email" id="correo" placeholder="Correo" required>
+                <input type="text" id="telefono" placeholder="Teléfono" required>
+                <button type="submit">Registrar</button>
+            </form>
+        </section>
+
+        <section id="transacciones">
+            <h2>Transacciones</h2>
+            <form id="form-transaccion">
+                <select id="tipo-transaccion">
+                    <option value="consignacion">Consignación</option>
+                    <option value="retiro">Retiro</option>
+                </select>
+                <input type="number" id="monto-transaccion" placeholder="Monto" required>
+                <input type="number" id="cuenta-origen" placeholder="Cuenta Origen (opcional)">
+                <input type="number" id="cuenta-destino" placeholder="Cuenta Destino (opcional)">
+                <button type="submit">Ejecutar Transacción</button>
+            </form>
+        </section>
+
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <form id="form-servicio">
+                <select id="tipo-servicio">
+                    <option value="compra_minutos">Compra de Minutos</option>
+                    <option value="pago_servicio_publico">Pago de Servicios Públicos</option>
+                </select>
+                <input type="number" id="monto-servicio" placeholder="Monto" required>
+                <button type="submit">Registrar Servicio</button>
+            </form>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
